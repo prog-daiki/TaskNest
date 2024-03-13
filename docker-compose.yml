@@ -1,1 +1,21 @@
-version: "3.0"
+version: "3.8"
+services:
+  web:
+    build:
+      dockerfile: ./frontend/Dockerfile
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./frontend:/app
+    ports:
+      - 3000:3000
+
+  api:
+    build:
+      dockerfile: ./backend/Dockerfile
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./backend:/app
+    ports:
+      - 8000:8000
