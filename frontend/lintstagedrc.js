@@ -4,5 +4,10 @@ const buildEslintCommand = (filenames) =>
   `next lint --fix --file ${filenames.map((f) => path.relative(process.cwd(), f)).join(" --file ")}`;
 
 export default {
-  "*.{js,jsx,ts,tsx}": [buildEslintCommand, "npm run format"], // ここで実行したいスクリプトを指定
+  "*.{js,jsx,ts,tsx}": [
+    buildEslintCommand,
+    "npm run format",
+    "npm run lint",
+    "npm run lint:fix",
+  ], // ここで実行したいスクリプトを指定
 };
