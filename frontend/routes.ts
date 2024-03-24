@@ -10,7 +10,7 @@ export const publicRoutes = ["/"];
  * これらのルートはログイン済みのユーザーを/homeにリダイレクトします
  * @type {string[]}
  */
-export const authRoutes = ["/home"];
+export const authRoutes = ["/"];
 
 /**
  * API認証ルートのプレフィックス
