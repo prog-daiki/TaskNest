@@ -24,7 +24,9 @@ export default function MarketingPage() {
                 そんな思いを込めて作ったWebサービスです。
               </p>
               <p className="text-md tracking-wide text-[#030A12CF] leading-9">
-                <span className="border-b-2">TaskNestでできること→</span>
+                <span className="border-b-2">
+                  TaskNestでできること→
+                </span>
               </p>
             </div>
             <div className="border-2 px-8 pt-8 sm:pt-0 w-full rounded-3xl flex flex-col sm:flex-row sm:items-center items-start justify-around">
@@ -46,7 +48,9 @@ export default function MarketingPage() {
               </div>
             </div>
             <div>
-              <p className=" text-muted-foreground">daiが運営中</p>
+              <p className=" text-muted-foreground">
+                daiが運営中
+              </p>
             </div>
           </div>
         </div>
