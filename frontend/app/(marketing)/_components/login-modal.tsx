@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
@@ -21,12 +23,7 @@ export const LoginModal = () => {
       <DialogContent className="p-16">
         <DialogHeader>
           <DialogTitle className="flex justify-center mb-8">
-            <Image
-              alt="Logo"
-              height={150}
-              src="/logo.png"
-              width={150}
-            />
+            <Image alt="Logo" height={150} src="/logo.png" width={150} />
           </DialogTitle>
           <DialogDescription className="text-md px-12">
             自身のタスクを整理して
