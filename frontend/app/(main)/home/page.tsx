@@ -5,7 +5,7 @@ const HomePage = async () => {
 
   return (
     <div>
-      {JSON.stringify(session)}
+      {JSON.stringify(session?.user.name)}
       <form
         action={async () => {
           "use server";
