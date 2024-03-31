@@ -11,6 +11,8 @@ import {
 import { useMediaQuery } from "usehooks-ts";
 
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { signOut } from "@/auth";
 
 export const Navigation = () => {
   const pathname = usePathname();
@@ -91,8 +93,12 @@ export const Navigation = () => {
         <div>
           <p>Action items</p>
         </div>
+
         <div className="mt-4">
           <p>Documents</p>
+          <Button onClick={() => signOut()}>
+            ログアウト
+          </Button>
         </div>
         <div
           onClick={resetWidth}

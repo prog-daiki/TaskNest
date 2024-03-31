@@ -15,7 +15,7 @@ const HomeLayout = async ({
   }
   return (
     <Suspense fallback={<Loading />}>
-      <div className="h-full">
+      <div className="h-full flex">
         <Navigation />
         {children}
       </div>
